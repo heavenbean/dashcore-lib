@@ -17,6 +17,8 @@ bitcore.versionGuard = function(version) {
 bitcore.versionGuard(global._dashcore);
 global._dashcore = bitcore.version;
 
+bitcore.valuetoSatoshi = 1e0;
+
 // crypto
 bitcore.crypto = {};
 bitcore.crypto.BN = require('./lib/crypto/bn');
